@@ -18,13 +18,10 @@
 <title>Yes, it's me!</title>
 <meta name="description" content="The distinctions separating the social classes are false; in the last analysis they rest on force. Albert Einstein.">
 <style>
-body{font:100%/186% arial}
+body{font:100%/186% Arial;text-align:center}
 h1{padding:5% 0 1%}
-h1,ul{margin:0 auto;white-space:nowrap;width:30%}
-a{color:#25c}
-ul,a{background-repeat:no-repeat}
-ul{background-image:url(https://s.gravatar.com/avatar/2a456edf70de1923511e485e75083795?s=200);list-style:none;padding-left:208px}
-a{padding-left:20px;background-size:16px 16px}
+ul{list-style:none;margin:0}
+a{background-repeat:no-repeat;background-size:16px;color:#25c;padding-left:20px}
 .fb{background-image:url(https://fb.com/favicon.ico)}
 .gp{background-image:url(https://plus.google.com/favicon.ico)}
 .twitter{background-image:url(https://twitter.com/favicon.ico)}
@@ -40,28 +37,44 @@ a{padding-left:20px;background-size:16px 16px}
 .periscope{background-image:url(https://www.periscope.tv/favicon.ico)}
 .gravatar{background-image:url(https://en.gravatar.com/favicon.ico)}
 .ks{background-image:url(https://www.kickstarter.com/favicon.ico)}
+.col{display:inline-block;text-align:left;vertical-align:middle}
+@media screen and (max-width:774px){
+  .image{display:block;text-align:center}
+  img{width:90%}
+  .col ul{padding:0 0 0 1em}
+}
 </style>
 <head>
 <body itemprop="about" itemscope itemtype="http://schema.org/Person">
 <h1>Yes, it's me!</h1>
 <link itemprop="url" href="http://vpodk.com">
-<ul>
-<li><a rel="nofollow" itemprop="sameAs" href="//facebook.com/vpodk" class="fb">Facebook</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//google.com/+vpodk" class="gp">Google+</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//youtube.com/user/vpodkamenyi" class="youtube">YouTube</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//twitter.com/vpodk" class="twitter">Twitter</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//instagram.com/vpodk/" class="instagram">Instagram</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//periscope.tv/vpodk/" class="periscope">Periscope</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//linkedin.com/in/vpodk" class="linkedin">LinkedIn</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//github.com/vpodk" class="github">GitHub</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//gitlab.com/u/vpodk" class="gitlab">GitLab</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//bitbucket.org/vpodk/" class="bitbucket">Bitbucket</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//stackoverflow.com/users/5438323/valentin" class="stackoverflow">StackOverflow</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//vpodk.tumblr.com/" class="tumblr">Tumblr</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//en.gravatar.com/vpodk" class="gravatar">Gravatar</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//paypal.me/vpodk" class="paypal">PayPal</a>
-<li><a rel="nofollow" itemprop="sameAs" href="//www.kickstarter.com/profile/vpodk" class="ks">Kickstarter</a></li>
-</ul>
+<div class="col image">
+  <img src="https://s.gravatar.com/avatar/2a456edf70de1923511e485e75083795?s=200"
+       itemprop="image" alt="Profile Picture" width="200">
+</div>
+<div class="col">
+  <ul>
+    <li><a rel="nofollow" itemprop="sameAs" href="//twitter.com/vpodk" class="twitter">Twitter</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//facebook.com/vpodk" class="fb">Facebook</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//instagram.com/vpodk/" class="instagram">Instagram</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//google.com/+vpodk" class="gp">Google+</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//youtube.com/user/vpodkamenyi" class="youtube">YouTube</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//linkedin.com/in/vpodk" class="linkedin">LinkedIn</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//en.gravatar.com/vpodk" class="gravatar">Gravatar</a>
+  </ul>
+</div>
+<div class="col">
+  <ul>
+    <li><a rel="nofollow" itemprop="sameAs" href="//github.com/vpodk" class="github">GitHub</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//gitlab.com/u/vpodk" class="gitlab">GitLab</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//bitbucket.org/vpodk/" class="bitbucket">Bitbucket</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//stackoverflow.com/users/5438323/valentin" class="stackoverflow">Stack Overflow</a>
+    <!--li><a rel="nofollow" itemprop="sameAs" href="//vpodk.tumblr.com/" class="tumblr">Tumblr</a-->
+    <li><a rel="nofollow" itemprop="sameAs" href="//periscope.tv/vpodk/" class="periscope">Periscope</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//paypal.me/vpodk" class="paypal">PayPal</a>
+    <li><a rel="nofollow" itemprop="sameAs" href="//www.kickstarter.com/profile/vpodk" class="ks">Kickstarter</a></li>
+  </ul>
+</div>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
